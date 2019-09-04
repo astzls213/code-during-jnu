@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/astzls/CLionProjects/heap/heapOperation.c
+mystd.h
+/Users/astzls/CLionProjects/heap/mystd.h
+
+/Users/astzls/CLionProjects/heap/main.c
+stdio.h
+-
+mystd.h
+/Users/astzls/CLionProjects/heap/mystd.h
+
+/Users/astzls/CLionProjects/heap/mystd.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+
