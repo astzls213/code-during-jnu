@@ -1,3 +1,0 @@
-/Users/astzls/CLionProjects/numberOp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/astzls/CLionProjects/numberOp/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/astzls/CLionProjects/numberOp/cmake-build-debug/CMakeFiles/numberOp.dir
