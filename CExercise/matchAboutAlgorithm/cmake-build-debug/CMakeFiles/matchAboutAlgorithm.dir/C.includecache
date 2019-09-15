@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/astzls/CLionProjects/matchAboutAlgorithm/bigNumber.c
+mystd.h
+/Users/astzls/CLionProjects/matchAboutAlgorithm/mystd.h
+
+/Users/astzls/CLionProjects/matchAboutAlgorithm/mystd.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+math.h
+-
+stdbool.h
+-
+
