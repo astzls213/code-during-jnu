@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/astzls/CLionProjects/hashTable/main.c
+mystd.h
+/Users/astzls/CLionProjects/hashTable/mystd.h
+
+/Users/astzls/CLionProjects/hashTable/mystd.h
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+

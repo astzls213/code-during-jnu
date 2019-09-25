@@ -3,4 +3,4 @@ project(matchAboutAlgorithm C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(matchAboutAlgorithm main.c flooded.c mystd.h MasterMindHint.c Hangman.c Stripies.c PBD.c bigNumber.c)
+add_executable(matchAboutAlgorithm main.c flooded.c mystd.h MasterMindHint.c Hangman.c Stripies.c PBD.c bigNumber.c Hanoi.c)

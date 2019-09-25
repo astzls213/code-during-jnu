@@ -2,7 +2,7 @@
 // Created by astzls on 2019-09-14.
 //
 #include<stdio.h>
-void PBD()
+void PBD() // Hduoj 1703
 {
     int num[10000],i,input[10000];
     num[0]=0;

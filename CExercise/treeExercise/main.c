@@ -17,10 +17,12 @@ int main() {
         insert(BT,value);
     }*/
     pretravel(BT);
-    puts("do you want to delete a value? answer like above.");
+    /*puts("do you want to delete a value? answer like above.");
     printf("value: ");
     scanf("%d",&value);
     delete(BT,value);
+    pretravel(BT);*/
+    rightLeftRotation(BT);
     pretravel(BT);
     puts("Bye!~");
     getchar();

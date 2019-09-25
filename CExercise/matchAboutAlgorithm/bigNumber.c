@@ -2,7 +2,7 @@
 // Created by astzls on 2019-09-14.
 //48
 #include "mystd.h"
-void bigNum(void){
+void bigNum(void){//simple add operation. But numbers is very very big. It really big!
     int round;
     scanf("%d",&round);
     getchar();

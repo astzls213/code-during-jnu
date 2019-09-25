@@ -26,3 +26,17 @@ void pretravel(Tree bt);
 Tree delete(Tree bt,int value);
 Position my_delete(int value,Tree t);
 Position delfind(Tree t,int value);
+
+struct AvlNode;
+typedef struct AvlNode* AvlTree;
+struct AvlNode{
+    int element;
+    AvlTree left;
+    AvlTree right;
+    int highDiffer;
+};
+void leftRotation(AvlTree avlRoot);
+int Height(AvlTree avl);
+void rightLeftRotation(AvlTree avlRoot);
+
+

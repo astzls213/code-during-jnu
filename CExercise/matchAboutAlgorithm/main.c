@@ -3,7 +3,8 @@ int main() {
     //masterHint();
     //Stripies();
     //PBD();
-    bigNum();
+    //bigNum();
     //printf(" ");
+    hanoi(4,'a','b','c');
     return 0;
 }

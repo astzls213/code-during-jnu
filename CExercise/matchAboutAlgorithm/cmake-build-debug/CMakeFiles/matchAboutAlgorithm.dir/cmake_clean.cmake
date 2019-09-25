@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/matchAboutAlgorithm.dir/Stripies.c.o"
   "CMakeFiles/matchAboutAlgorithm.dir/PBD.c.o"
   "CMakeFiles/matchAboutAlgorithm.dir/bigNumber.c.o"
+  "CMakeFiles/matchAboutAlgorithm.dir/Hanoi.c.o"
   "matchAboutAlgorithm.pdb"
   "matchAboutAlgorithm"
 )

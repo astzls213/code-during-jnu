@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/astzls/CLionProjects/matchAboutAlgorithm/Hangman.c" "/Users/astzls/CLionProjects/matchAboutAlgorithm/cmake-build-debug/CMakeFiles/matchAboutAlgorithm.dir/Hangman.c.o"
+  "/Users/astzls/CLionProjects/matchAboutAlgorithm/Hanoi.c" "/Users/astzls/CLionProjects/matchAboutAlgorithm/cmake-build-debug/CMakeFiles/matchAboutAlgorithm.dir/Hanoi.c.o"
   "/Users/astzls/CLionProjects/matchAboutAlgorithm/MasterMindHint.c" "/Users/astzls/CLionProjects/matchAboutAlgorithm/cmake-build-debug/CMakeFiles/matchAboutAlgorithm.dir/MasterMindHint.c.o"
   "/Users/astzls/CLionProjects/matchAboutAlgorithm/PBD.c" "/Users/astzls/CLionProjects/matchAboutAlgorithm/cmake-build-debug/CMakeFiles/matchAboutAlgorithm.dir/PBD.c.o"
   "/Users/astzls/CLionProjects/matchAboutAlgorithm/Stripies.c" "/Users/astzls/CLionProjects/matchAboutAlgorithm/cmake-build-debug/CMakeFiles/matchAboutAlgorithm.dir/Stripies.c.o"

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/astzls/CLionProjects/studentClassArrangementSystem/mystd.h
+stdbool.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+
+/Users/astzls/CLionProjects/studentClassArrangementSystem/systemOperation.c
+mystd.h
+/Users/astzls/CLionProjects/studentClassArrangementSystem/mystd.h
+

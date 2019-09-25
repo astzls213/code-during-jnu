@@ -27,6 +27,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -62,6 +63,8 @@
       <workItem from="1566964280947" duration="175000" />
       <workItem from="1566964549166" duration="9000" />
       <workItem from="1566977001083" duration="20752000" />
+      <workItem from="1567643367580" duration="5457000" />
+      <workItem from="1568855900550" duration="492000" />
     </task>
     <servers />
   </component>

@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
+#include <time.h>
 #define MAX 1000
 //define heap
 struct heap{
@@ -22,6 +22,7 @@ typedef struct heap* maxheap;
 //base Operation
 maxheap createHeap(int cap);
 int isFull(maxheap heap);
-void insert(int value,maxheap heap);
+void insert_MAX(int value,maxheap heap);
 maxheap deleteHeapMax(maxheap heap);
 int isEmpty(maxheap heap);
+maxheap constructMaxHeap(maxheap maxHeap,int array[],int lenArray);

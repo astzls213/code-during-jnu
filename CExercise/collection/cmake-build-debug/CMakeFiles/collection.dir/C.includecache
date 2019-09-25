@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/astzls/CLionProjects/collection/main.c
+mystd.h
+/Users/astzls/CLionProjects/collection/mystd.h
+
+/Users/astzls/CLionProjects/collection/mystd.h
+stdio.h
+-
+

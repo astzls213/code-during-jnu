@@ -3,7 +3,7 @@
 //
 #include <stdio.h>
 #include "mystd.h"
-void Hangman(void){
+void Hangman(void){// guest word game
     int num,wrong=0,correct=0,kind=0,kase=0;
     int character[26];
     for(int i=0;i<26;i++)

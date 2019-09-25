@@ -61,3 +61,5 @@ typedef struct{
 typedef expr* Expr;
 
 void bigNum();
+
+void hanoi(int num , char A, char B, char C);

@@ -16,7 +16,7 @@ int isFull(maxheap heap){
     else
         return 0;
 }
-void insert(int value,maxheap heap){
+void insert_MAX(int value,maxheap heap){
     if(isFull(heap))
     {
         puts("maxheap is already full!!");
@@ -67,5 +67,53 @@ int isEmpty(maxheap heap){
     else
         return 0;
 }
-
+maxheap constructMaxHeap(maxheap maxHeap,int array[],int lenArray){
+    if(lenArray<=maxHeap->capacity)
+        maxHeap->size=lenArray;
+    else
+    {
+        printf("Out of capacity!");
+        return maxHeap;
+    }
+    for(int i=1;i<=lenArray;i++){
+        maxHeap->element[i]=array[i-1];//assign array to maxHeap in order.
+    }
+    for(int i=lenArray/2;i>0;i--){
+        int tmpI=i;
+        while(i*2<=maxHeap->capacity){
+            int child=i*2;
+            int tmpParent=maxHeap->element[i];
+            if(child+1<=maxHeap->capacity)
+            {
+                if(maxHeap->element[child]<maxHeap->element[child+1])
+                {
+                    if(maxHeap->element[i]<maxHeap->element[child+1])
+                    {
+                        maxHeap->element[i]=maxHeap->element[child+1];
+                        maxHeap->element[child+1]=tmpParent;
+                        i=child+1;
+                    }
+                }
+                else{
+                    if(maxHeap->element[i]<maxHeap->element[child])
+                    {
+                        maxHeap->element[i]=maxHeap->element[child];
+                        maxHeap->element[child]=tmpParent;
+                        i=child;
+                    }
+                }
+            }
+            else{
+                if(maxHeap->element[i]<maxHeap->element[child])
+                {
+                    maxHeap->element[i]=maxHeap->element[child];
+                    maxHeap->element[child]=tmpParent;
+                    i=child;
+                }
+            }
+        }
+        i=tmpI;
+    }
+    return maxHeap;
+}
 

@@ -3,7 +3,7 @@
 //
 #include <stdio.h>
 #include "mystd.h"
-void masterHint() {
+void masterHint() { // guest numbers game.
     int n;
     while(scanf("%d",&n)!=1||n<=0)
         continue;

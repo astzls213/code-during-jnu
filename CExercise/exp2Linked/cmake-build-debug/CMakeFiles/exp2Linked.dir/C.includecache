@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/astzls/CLionProjects/exp2Linked/linkedHead.h
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+
+/Users/astzls/CLionProjects/exp2Linked/main.c
+linkedHead.h
+/Users/astzls/CLionProjects/exp2Linked/linkedHead.h
+

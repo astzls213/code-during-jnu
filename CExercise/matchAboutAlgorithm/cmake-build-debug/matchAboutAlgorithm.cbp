@@ -81,6 +81,9 @@
 		<Unit filename="/Users/astzls/CLionProjects/matchAboutAlgorithm/Hangman.c">
 			<Option target="matchAboutAlgorithm"/>
 		</Unit>
+		<Unit filename="/Users/astzls/CLionProjects/matchAboutAlgorithm/Hanoi.c">
+			<Option target="matchAboutAlgorithm"/>
+		</Unit>
 		<Unit filename="/Users/astzls/CLionProjects/matchAboutAlgorithm/MasterMindHint.c">
 			<Option target="matchAboutAlgorithm"/>
 		</Unit>

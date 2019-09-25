@@ -150,6 +150,33 @@ Hangman.c.s:
 	$(MAKE) -f CMakeFiles/matchAboutAlgorithm.dir/build.make CMakeFiles/matchAboutAlgorithm.dir/Hangman.c.s
 .PHONY : Hangman.c.s
 
+Hanoi.o: Hanoi.c.o
+
+.PHONY : Hanoi.o
+
+# target to build an object file
+Hanoi.c.o:
+	$(MAKE) -f CMakeFiles/matchAboutAlgorithm.dir/build.make CMakeFiles/matchAboutAlgorithm.dir/Hanoi.c.o
+.PHONY : Hanoi.c.o
+
+Hanoi.i: Hanoi.c.i
+
+.PHONY : Hanoi.i
+
+# target to preprocess a source file
+Hanoi.c.i:
+	$(MAKE) -f CMakeFiles/matchAboutAlgorithm.dir/build.make CMakeFiles/matchAboutAlgorithm.dir/Hanoi.c.i
+.PHONY : Hanoi.c.i
+
+Hanoi.s: Hanoi.c.s
+
+.PHONY : Hanoi.s
+
+# target to generate assembly for a file
+Hanoi.c.s:
+	$(MAKE) -f CMakeFiles/matchAboutAlgorithm.dir/build.make CMakeFiles/matchAboutAlgorithm.dir/Hanoi.c.s
+.PHONY : Hanoi.c.s
+
 MasterMindHint.o: MasterMindHint.c.o
 
 .PHONY : MasterMindHint.o
@@ -324,6 +351,9 @@ help:
 	@echo "... Hangman.o"
 	@echo "... Hangman.i"
 	@echo "... Hangman.s"
+	@echo "... Hanoi.o"
+	@echo "... Hanoi.i"
+	@echo "... Hanoi.s"
 	@echo "... MasterMindHint.o"
 	@echo "... MasterMindHint.i"
 	@echo "... MasterMindHint.s"

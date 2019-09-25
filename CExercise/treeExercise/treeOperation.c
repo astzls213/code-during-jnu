@@ -112,3 +112,48 @@ Position delfind(Tree t,int value){
     }
     return NULL;*/
 }
+
+void leftRotation(AvlTree avlRoot){
+    int Root=avlRoot->element;//keep Root element.
+    avlRoot->element=avlRoot->left->element;//let key value copy to Root, similar delete.
+
+    AvlTree tmpRootL=avlRoot->left;//keep Root left child
+    AvlTree tmpRootR=avlRoot->right;//similar
+    AvlTree tmpKeyR=tmpRootL->right;//similar
+
+    avlRoot->left=tmpRootL->left;//let left point to left-left.
+    avlRoot->right=tmpRootL;//let right point to original right.
+
+    avlRoot->right->element=Root;//transfer to Root
+    avlRoot->right->left=tmpKeyR;
+    avlRoot->right->right=tmpRootR;
+}
+void rightLeftRotation(AvlTree avlRoot){
+    int Root=avlRoot->element;
+    avlRoot->element=avlRoot->right->left->element;
+    avlRoot->right->left->element=Root;//swap root and Key-left value.
+
+    AvlTree tmpRootLeft=avlRoot->left;
+    avlRoot->left=avlRoot->right->left;//root-left point to key-left.
+
+    AvlTree tmpRLL=avlRoot->left->left;
+    AvlTree tmpRLR=avlRoot->left->right;
+    avlRoot->left->left=tmpRootLeft;//point to origin Root left.
+
+    avlRoot->left->right=tmpRLL;//let Key-left-right be key L child.
+    avlRoot->right->left=tmpRLR;//let Key-right-left be key R child.
+}
+int Height(AvlTree avl){
+    int leftHigh,rightHigh;
+    if(avl->left){
+        leftHigh=1+Height(avl->left);
+    }
+    else
+        leftHigh=0;
+    if(avl->right){
+        rightHigh=1+Height(avl->right);
+    }
+    else
+        rightHigh=0;
+    return leftHigh-rightHigh;
+}

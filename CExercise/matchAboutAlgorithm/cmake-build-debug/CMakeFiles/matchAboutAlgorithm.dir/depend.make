@@ -4,6 +4,9 @@
 CMakeFiles/matchAboutAlgorithm.dir/Hangman.c.o: ../Hangman.c
 CMakeFiles/matchAboutAlgorithm.dir/Hangman.c.o: ../mystd.h
 
+CMakeFiles/matchAboutAlgorithm.dir/Hanoi.c.o: ../Hanoi.c
+CMakeFiles/matchAboutAlgorithm.dir/Hanoi.c.o: ../mystd.h
+
 CMakeFiles/matchAboutAlgorithm.dir/MasterMindHint.c.o: ../MasterMindHint.c
 CMakeFiles/matchAboutAlgorithm.dir/MasterMindHint.c.o: ../mystd.h
 

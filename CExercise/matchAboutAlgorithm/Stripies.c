@@ -2,7 +2,7 @@
 // Created by astzls on 2019-09-14.
 //
 #include "mystd.h"
-void Stripies(void){
+void Stripies(void){  //similar with huffman code
     int n;
     scanf("%d",&n);
     stripie stripies=initialStripie(n);
