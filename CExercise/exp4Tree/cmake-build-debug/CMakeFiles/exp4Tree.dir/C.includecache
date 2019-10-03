@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/astzls/CLionProjects/exp4Tree/mystd.h
+stdio.h
+-
+stdlib.h
+-
+
+/Users/astzls/CLionProjects/exp4Tree/operation.c
+mystd.h
+/Users/astzls/CLionProjects/exp4Tree/mystd.h
+
