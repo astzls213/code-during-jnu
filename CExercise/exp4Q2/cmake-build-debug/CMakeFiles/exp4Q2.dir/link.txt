@@ -1,0 +1,1 @@
+/usr/bin/clang -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/exp4Q2.dir/main.c.o CMakeFiles/exp4Q2.dir/huffmanOp.c.o  -o exp4Q2 
