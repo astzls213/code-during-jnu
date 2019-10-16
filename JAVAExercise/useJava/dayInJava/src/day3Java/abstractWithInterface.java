@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class abstractWithInterface {
     public static void main(String[] args) {
-        Zed zed=new Zed(1000);
+        Zed zed=new Zed("zed",1000);
         Fizz fizz=new Fizz(950);
         Scanner scan=new Scanner(System.in);
         for(int i=0;i<2;i++){
@@ -50,6 +50,7 @@ public class abstractWithInterface {
     }
 }
 abstract class Hero{
+    public String name;
     Skill[] skills=new Skill[2];
     public int hp;
     public void setHp(int hp){
@@ -80,9 +81,9 @@ class Skill{
     }
 }
 class Zed extends Hero implements AD{
-    public final String name="Zed";
-    public Zed(int hp){
-        super.setHp(hp);
+    public Zed(String name,int hp){
+        super.name=name;
+        super.hp=hp;
     }
     private final int adProtect=30;
     private final int apProtect=15;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0c4c808-0b3f-4ddd-8932-682ac78ef012" name="Default Changelist" comment="" />
+    <list default="true" id="878acb6a-a245-4be3-99b2-fc7598a690b6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,13 +15,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1Qji2oY58CAAQWBnpSGyOxUHbGA" />
+  <component name="ProjectId" id="1SHbzVtjbPgwFsykLy4yYSHteHZ" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -35,13 +32,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Q3">
-    <configuration name="Q13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap6.Q13" />
-      <module name="javaHomework" />
+  <component name="RunManager" selected="Application.Human">
+    <configuration name="ArgsDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exp2.ArgsDemo" />
+      <module name="javaExperiment" />
+      <option name="PROGRAM_PARAMETERS" value="-f zls -V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap6.*" />
+          <option name="PATTERN" value="exp2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -49,12 +47,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q15 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap5.Q15" />
-      <module name="javaHomework" />
+    <configuration name="Human" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exp2.Human" />
+      <module name="javaExperiment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap5.*" />
+          <option name="PATTERN" value="exp2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,12 +60,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap5.Q16" />
-      <module name="javaHomework" />
+    <configuration name="ISBN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exp2.ISBN" />
+      <module name="javaExperiment" />
+      <option name="PROGRAM_PARAMETERS" value="-f sad -v" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap5.*" />
+          <option name="PATTERN" value="exp2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap7.Q2" />
-      <module name="javaHomework" />
+    <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exp2.User" />
+      <module name="javaExperiment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap7.*" />
+          <option name="PATTERN" value="exp2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap6.Q3" />
-      <module name="javaHomework" />
+    <configuration name="arrayCopy_Iteration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exp2.arrayCopy_Iteration" />
+      <module name="javaExperiment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap6.*" />
+          <option name="PATTERN" value="exp2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,13 +100,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ArgsDemo" />
+      <item itemvalue="Application.arrayCopy_Iteration" />
+      <item itemvalue="Application.User" />
+      <item itemvalue="Application.Human" />
+      <item itemvalue="Application.ISBN" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Q3" />
-        <item itemvalue="Application.Q2" />
-        <item itemvalue="Application.Q13" />
-        <item itemvalue="Application.Q16" />
-        <item itemvalue="Application.Q15 (1)" />
+        <item itemvalue="Application.Human" />
+        <item itemvalue="Application.ArgsDemo" />
+        <item itemvalue="Application.ISBN" />
+        <item itemvalue="Application.arrayCopy_Iteration" />
+        <item itemvalue="Application.User" />
       </list>
     </recent_temporary>
   </component>
@@ -116,15 +122,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c0c4c808-0b3f-4ddd-8932-682ac78ef012" name="Default Changelist" comment="" />
-      <created>1568290202239</created>
+      <changelist id="878acb6a-a245-4be3-99b2-fc7598a690b6" name="Default Changelist" comment="" />
+      <created>1571223730905</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568290202239</updated>
-      <workItem from="1568290204869" duration="7041000" />
-      <workItem from="1570617033098" duration="5735000" />
-      <workItem from="1571211137906" duration="5685000" />
-      <workItem from="1571232157845" duration="461000" />
+      <updated>1571223730905</updated>
+      <workItem from="1571223732137" duration="5714000" />
     </task>
     <servers />
   </component>

@@ -5,6 +5,8 @@
 
 ​	2019.10.16
 
+​		/JAVAExercise has been upload some homework near this month. It's so simple, thus just ignore it ^ ^
+
 ​		/CExercise/exp4Q2 project now can encode your text to huffman code and decode it. You just tell what name the text file is and it will work. Ultimately, file will be stored in ./cmake-build-debug.
 
 ### Note:
