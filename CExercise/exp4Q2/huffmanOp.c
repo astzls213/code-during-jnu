@@ -1,5 +1,11 @@
 #include "header.h"
 
+void menu(){
+    puts("*******************************************************");
+    puts("$  1. Analyse each character frequency in your text.  $");
+    puts("$   2. Manually enter frequency for each character.   $");
+    puts("*******************************************************");
+}
 MinHeap initialMinHeap(int cap){
     MinHeap rtv=(MinHeap)malloc(sizeof(heap));
     if(!rtv)
@@ -26,19 +32,19 @@ MinHeap initialMinHeap(int cap){
     return rtv;
 }
 void loadData(MinHeap h){
+    puts("Format-> frequency char frequency char ...");
     while(h->size<h->capacity)
     {
         h->element[++h->size]=(Node)malloc(sizeof(struct node));
         if(!h->element[h->size])
             puts("Out of memory!");
         else{
-            scanf("%c %lf",&h->element[h->size]->c,&h->element[h->size]->weight);
-            while(getchar()!='\n')
-                continue;
+            scanf("%lf %c",&h->element[h->size]->weight,&h->element[h->size]->c);
             h->element[h->size]->left=NULL;
             h->element[h->size]->right=NULL;
         }
     }
+    getchar();
 }
 void MinHeapStatus(MinHeap h){
     for(int parent=h->size/2;parent>0;parent--){
@@ -139,7 +145,7 @@ int countHuff(Node huff){
     return count;
 }
 
-void printHuffmanTree(Node huff) {
+void printHuffmanTree(Node huff,FILE *file) {
     int N = TreeHeight(huff); //height of tree
     //Can use a queue instead of 2 stacks.
     Stack formal=createStack((int)pow(2,N));
@@ -158,7 +164,7 @@ void printHuffmanTree(Node huff) {
 
     int col = (3 * (int) pow(2, N)) - 1;
 
-    char display[ROW][COL];
+    char display[row][col];
     for (int r = 0; r < row; r++) {
         for (int c = 0; c < col; c++)
             display[r][c] = ' ';
@@ -280,12 +286,28 @@ void printHuffmanTree(Node huff) {
                 c+=2;
         }
     }
+    puts("*************************************************");
+    puts("$   Do you want to visual huffman in console?   $");
+    puts("$   1.Yes                                0.No   $");
+    puts("*************************************************");
+    int judge;
+    while(scanf("%d",&judge)!=1||(judge>1||judge<0))
+        puts("Invalid input. Again!");
+    getchar();
+    if(judge==1)
+    {
+        //print display.
+        for (int q = 0; q < row; q++) {
+            for (int t = 0; t < col; t++)
+                printf("%c", display[q][t]);
+            putchar('\n');
+        }
+    }
 
-    //print display.
     for(int q=0;q<row;q++){
         for(int t=0;t<col;t++)
-            printf("%c",display[q][t]);
-        putchar('\n');
+            fputc(display[q][t],file);
+        fputc('\n',file);
     }
     //free malloc on this function.
     free(formal);
@@ -337,4 +359,101 @@ int isEmpty(Stack s){
 }
 int isFull(Stack s){
     return (s->top+1==s->capacity)?1:0;
+}
+
+char * inputStream(char *string,int size,FILE *stream){
+    char *rtv;
+    char *find;
+
+    rtv=fgets(string,size,stream);
+    if(!rtv)
+        return NULL;
+    else{
+        find=strchr(string,'\n');
+        if(find)
+            *find='\0';
+        else
+            while(getchar()!='\n')
+                continue;
+    }
+    return rtv;
+}
+
+void getCode(Node huff,FILE *file,int path[]){
+    static int i=0;
+    if(huff->left->left!=NULL)
+    {
+        *(path+i++)=0;
+        getCode(huff->left,file,path);
+        i--;
+    }
+    else
+    {
+        //print in text.
+        fputc(huff->left->c,file);
+        for(int count=0;count<i;count++)
+            fprintf(file,"%d",path[count]);
+        fprintf(file,"0\n");
+
+    }
+    if(huff->right->right!=NULL)
+    {
+        *(path+i++)=1;
+        getCode(huff->right,file,path);
+        i--;
+    }
+    else
+    {
+        //print in text.
+        fputc(huff->right->c,file);
+        for(int count=0;count<i;count++)
+            fprintf(file,"%d",path[count]);
+        fprintf(file,"1\n");
+    }
+}
+
+void encoding(FILE *dest,FILE *text,char *code[]){
+    while(1){
+        int tmp;
+        tmp=getc(text);
+        if(tmp==-1)
+            break;
+        if(code[tmp-32]!=NULL){
+            fprintf(dest,"%s",code[tmp-32]);
+        }
+        else{
+            printf("Appear an unknown character, terminate!");
+            return ;
+        }
+    }
+}
+void decoding(FILE *dest,FILE *text,char **code,int treeHeight){
+    char *find=NULL;
+    char *tmp=(char *)malloc(sizeof(char)*(treeHeight+1));
+    *tmp='\0';
+    while(1){
+        int i=getc(text);
+        if(i==-1)
+            break;
+        find=strchr(tmp,'\0');
+        *find=i;
+        *(find+1)='\0';
+
+        for(int count=0;count<CHAR;count++){
+            if(code[count]==NULL)
+                continue;
+            else
+            {
+                if(strcmp(code[count],tmp)==0)
+                {
+                    fputc(count+32,dest);
+                    *tmp='\0';
+                    break;
+                }
+                else
+                    continue;
+            }
+        }
+    }
+    free(tmp);
 }

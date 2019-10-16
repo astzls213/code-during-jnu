@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <math.h>
 #define MIN 0
-#define ROW 100
-#define COL 100
+#define MAX_NAME_LENGTH 101
+#define CHAR 95
 struct node;
 typedef struct node *Node;
 struct node{
@@ -26,6 +27,8 @@ typedef struct stack{
     Node *data;
 }*Stack;
 
+void menu();
+
 MinHeap initialMinHeap(int cap);
 Node delMin(MinHeap h);
 Node huffmanStatus(MinHeap h);
@@ -33,7 +36,7 @@ void MinHeapStatus(MinHeap h);
 void insert(Node i,MinHeap h);
 void loadData(MinHeap h);
 
-void printHuffmanTree(Node huff);
+void printHuffmanTree(Node huff,FILE *file);
 int TreeHeight(Node huff);
 int maxInt(int i,int j);
 
@@ -42,3 +45,10 @@ void push(Stack,Node data);
 Node pop(Stack s);
 int isEmpty(Stack s);
 int isFull(Stack s);
+
+char *inputStream(char *string,int size,FILE *);
+
+void getCode(Node huff,FILE *file,int path[]);
+
+void encoding(FILE *dest,FILE *text,char *code[]);
+void decoding(FILE *dest,FILE *text,char *code[],int treeHeight);
