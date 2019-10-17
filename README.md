@@ -3,7 +3,11 @@
 
 ### Update:
 
-​	2019.10.16
+​	2019, 10, 17
+
+​		added .gitignore file to ignore files when c compiling generated.
+
+​	2019, 10, 16
 
 ​		/JAVAExercise has been upload some homework near this month. It's so simple, thus just ignore it ^ ^
 
