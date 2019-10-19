@@ -37,6 +37,7 @@ void insert(Node i,MinHeap h);
 void loadData(MinHeap h);
 
 void printHuffmanTree(Node huff,FILE *file);
+void printBigTree(Node huff,FILE *file);
 int TreeHeight(Node huff);
 int maxInt(int i,int j);
 
@@ -52,3 +53,5 @@ void getCode(Node huff,FILE *file,int path[]);
 
 void encoding(FILE *dest,FILE *text,char *code[]);
 void decoding(FILE *dest,FILE *text,char *code[],int treeHeight);
+
+int *analyseFrequency();

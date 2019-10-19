@@ -144,7 +144,150 @@ int countHuff(Node huff){
     }
     return count;
 }
+void printBigTree(Node huff,FILE *file){
+    int N = TreeHeight(huff); //height of tree
+    //Can use a queue instead of 2 stacks.
+    Stack formal=createStack((int)pow(2,N));
+    Stack reserves=createStack((int)pow(2,N));
+    //empty node means NULL node.
+    Node empty=malloc(sizeof(struct node));
+    empty->c='\0';
+    empty->left=NULL;
+    empty->right=NULL;
+    //calculate the huffman tree size.
+    int row=2*N+1;
+    int col = (3 * (int) pow(2, N)) - 1;
 
+    char display[row][col];
+    for (int r = 0; r < row; r++) {
+        for (int c = 0; c < col; c++)
+            display[r][c] = ' ';
+    }
+    int r=0,c=col/2; // This is the coordinate of root.
+
+    for(int i=N;i>0;i--){
+        int offset=c/2;
+        display[r+1][c-offset]='/';
+        r+=2;
+        c/=2;
+    }
+    //let it symmetry. From the button to top.
+    r-=2; //we just let it turn to the first node in the last but one layer.
+    c+=1;
+    for(int i=1;i<=N;i++)
+    {
+        for(int sc=c-1;sc!=-1;sc--){
+            for(int sr=r+1;sr!=row;sr++){
+                int offset=c-sc;
+                if(display[sr][sc]=='/')
+                    display[sr][c+offset]='\\';
+                else if(display[sr][sc]=='\\')
+                    display[sr][c+offset]='/';
+            }
+        }
+        r-=2; //This is a function that indicate the coordinate of the first node about the upper layer.
+        c=2*c+1;
+    }
+    // reset (r,c) to the root.
+    r=0;
+    c=col/2;
+    push(reserves,huff);// let the root get in!
+    for(int i=0;i<N;i++){
+        while(!isEmpty(reserves))
+        {
+            Node tmp=pop(reserves);
+            push(formal,tmp);
+        }
+
+        int originC=c; //keep c! Cause c will be changed to the next node on the same layer.
+
+        for(int j=1;j<=(int)pow(2,i);j++){ // it repeats 2^i times.
+            int offset=3*(int)pow(2,N-i)-1;
+            Node n=pop(formal);
+            display[r][c]=n->c;
+            //delete edge when is NULL node( blank meant NULL node )
+            if(n->c=='\0')
+            {
+                display[r][c]=' ';
+                if(j%2==1)
+                    display[r-1][c+1]=' ';//delete / as it is a NULL node.
+                else
+                    display[r-1][c-1]=' ';//like above.
+            }
+
+            if(n->left)
+                push(reserves,n->left);
+            else
+                push(reserves,empty);
+            if(n->right)
+                push(reserves,n->right);
+            else
+                push(reserves,empty);
+            c+=offset+1;
+        }
+
+        c=originC;
+        r += 2;
+        c /= 2;
+    }
+    c-=1;
+    // last line must be printed it separately.
+    while(!isEmpty(reserves))
+    {
+        Node tmp=pop(reserves);
+        push(formal,tmp);
+    }
+    for(int i=1;i<=(int)pow(2,N);i++){
+        Node n=pop(formal);
+        if(n->c=='\0'){
+            display[r][c]=' ';
+            if(i%2==1)
+            {
+                display[r-1][c+1]=' ';//delete / as it is a NULL node.
+                c+=4;
+            }
+            else
+            {
+                display[r-1][c-1]=' ';//like above.
+                c+=2;
+            }
+        }
+        else{
+            display[r][c]=n->c;
+            if(i%2==1)
+                c+=4;
+            else
+                c+=2;
+        }
+    }
+    puts("*************************************************");
+    puts("$   Do you want to visual huffman in console?   $");
+    puts("$   1.Yes                                0.No   $");
+    puts("*************************************************");
+    int judge;
+    while(scanf("%d",&judge)!=1||(judge>1||judge<0))
+        puts("Invalid input. Again!");
+    getchar();
+    if(judge)
+    {
+        //print display.
+        for (int q = 0; q < row; q++) {
+            for (int t = 0; t < col; t++)
+                printf("%c", display[q][t]);
+            putchar('\n');
+        }
+    }
+
+    for(int q=0;q<row;q++){
+        for(int t=0;t<col;t++)
+            fputc(display[q][t],file);
+        fputc('\n',file);
+    }
+    //free malloc on this function.
+    free(formal);
+    free(reserves);
+    free(empty);
+}
 void printHuffmanTree(Node huff,FILE *file) {
     int N = TreeHeight(huff); //height of tree
     //Can use a queue instead of 2 stacks.
@@ -152,7 +295,7 @@ void printHuffmanTree(Node huff,FILE *file) {
     Stack reserves=createStack((int)pow(2,N));
     //empty node means NULL node.
     Node empty=malloc(sizeof(struct node));
-    empty->c=' ';
+    empty->c='\0';
     empty->left=NULL;
     empty->right=NULL;
     //calculate the huffman tree size.
@@ -211,8 +354,9 @@ void printHuffmanTree(Node huff,FILE *file) {
             Node n=pop(formal);
             display[r][c]=n->c;
 
-            if(n->c==' ')
+            if(n->c=='\0')
             {
+                display[r][c]=' ';
                 int upper=3*(int)pow(2,k-1)-1;
                 if(j%2==1)
                 {
@@ -265,7 +409,7 @@ void printHuffmanTree(Node huff,FILE *file) {
     }
     for(int i=1;i<=(int)pow(2,N);i++){
         Node n=pop(formal);
-        if(n->c==' '){
+        if(n->c=='\0'){
             display[r][c]=' ';
             if(i%2==1)
             {
@@ -456,4 +600,19 @@ void decoding(FILE *dest,FILE *text,char **code,int treeHeight){
         }
     }
     free(tmp);
+}
+int *analyseFrequency(){
+    int *frequencyTable=(int *)calloc(CHAR,sizeof(int));
+    puts("What name do your text file going to analyse?");
+    char name[MAX_NAME_LENGTH];
+    inputStream(name,MAX_NAME_LENGTH,stdin);
+    FILE *text=fopen(name,"r");
+    while(1){
+        int tmp;
+        tmp=getc(text);
+        if(tmp==-1)
+            break;
+        frequencyTable[tmp-32]++;
+    }
+    return frequencyTable;
 }
