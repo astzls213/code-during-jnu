@@ -3,32 +3,38 @@
 
 ### Update:
 
-2019, 10, 20
+###### 2019, 10, 22
+
+​		update README for exp4Q2. It includes all my ideas when designing it.
+
+###### 2019, 10, 20
 
 ​		exp4Q2 now optimize the huffman tree visualization. When Tree height larger than 4, it will work like a compressed style to visual huffman tree. Like this:
 
-                                              *                                               
-                       /                                             \                        
-                      *                                               a                       
-           /                     \                                                            
-          *                       b                                                           
-         /         \                                                                              
-        *           c
-       /   \
-      *     d                                                                                      
-     / \                                                                                           
-    e   f 
+```c
+                                *                                           
+          /                                             \                       
+         *                                               a                     
+       /                     \                                                         
+      *                       b                                                    
+     /         \                                                                      
+    *           c
+   /   \
+  *     d                                                          
+ / \                                                                               
+e   f 
+```
 It just let it flatter, more friendly^_^
 
 ​		More importantly, it supports analysing each character frequency in a text and generate a huffman tree with its code. And we can use that to encoding your text to something like '01010001'.
 
 ​		It means that you just no need to enter every char frequency on the console!!!! That is awesome, isn' it?
 
-2019, 10, 17
+###### 2019, 10, 17
 
 ​		added .gitignore file to ignore files when c compiling generated.
 
-​	2019, 10, 16
+###### 2019, 10, 16
 
 ​		/JAVAExercise has been upload some homework near this month. It's so simple, thus just ignore it ^ ^
 
