@@ -60,28 +60,28 @@ include CMakeFiles/graph.dir/flags.make
 CMakeFiles/graph.dir/main.c.o: CMakeFiles/graph.dir/flags.make
 CMakeFiles/graph.dir/main.c.o: ../main.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/astzls/CLionProjects/graph/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/graph.dir/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/graph.dir/main.c.o   -c /Users/astzls/CLionProjects/graph/main.c
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/graph.dir/main.c.o   -c /Users/astzls/CLionProjects/graph/main.c
 
 CMakeFiles/graph.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/graph.dir/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/astzls/CLionProjects/graph/main.c > CMakeFiles/graph.dir/main.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/astzls/CLionProjects/graph/main.c > CMakeFiles/graph.dir/main.c.i
 
 CMakeFiles/graph.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/graph.dir/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/astzls/CLionProjects/graph/main.c -o CMakeFiles/graph.dir/main.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/astzls/CLionProjects/graph/main.c -o CMakeFiles/graph.dir/main.c.s
 
 CMakeFiles/graph.dir/graphOp.c.o: CMakeFiles/graph.dir/flags.make
 CMakeFiles/graph.dir/graphOp.c.o: ../graphOp.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/astzls/CLionProjects/graph/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/graph.dir/graphOp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/graph.dir/graphOp.c.o   -c /Users/astzls/CLionProjects/graph/graphOp.c
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/graph.dir/graphOp.c.o   -c /Users/astzls/CLionProjects/graph/graphOp.c
 
 CMakeFiles/graph.dir/graphOp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/graph.dir/graphOp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/astzls/CLionProjects/graph/graphOp.c > CMakeFiles/graph.dir/graphOp.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/astzls/CLionProjects/graph/graphOp.c > CMakeFiles/graph.dir/graphOp.c.i
 
 CMakeFiles/graph.dir/graphOp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/graph.dir/graphOp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/astzls/CLionProjects/graph/graphOp.c -o CMakeFiles/graph.dir/graphOp.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/astzls/CLionProjects/graph/graphOp.c -o CMakeFiles/graph.dir/graphOp.c.s
 
 # Object files for target graph
 graph_OBJECTS = \

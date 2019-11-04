@@ -25,6 +25,7 @@
   <component name="ProjectId" id="1R2xb2sSGm07yh8if3jcvOnSUbU" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -57,6 +58,11 @@
       <updated>1568879059479</updated>
       <workItem from="1568879060684" duration="716000" />
       <workItem from="1569234626278" duration="10084000" />
+      <workItem from="1570372140079" duration="272000" />
+      <workItem from="1570373611941" duration="253000" />
+      <workItem from="1572677355485" duration="10782000" />
+      <workItem from="1572750493410" duration="745000" />
+      <workItem from="1572873530228" duration="176000" />
     </task>
     <servers />
   </component>

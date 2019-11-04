@@ -20,11 +20,14 @@ MUGraph createMUGraph(int scale){
 LGraph createLGraph(int scale){
     LGraph graph=(LGraph)malloc(sizeof(struct ListGraph));
     graph->numbersVertex=scale;
+    graph->adjList=(VNode*)malloc(sizeof(VNode)*scale);
     graph->numbersEdge=0;
     for(int i=0;i<scale;i++)
     {
         (graph->adjList)[i].flag=false;
         (graph->adjList)[i].firstAdjNode=NULL;
+        (graph->adjList)[i].InDegree=0;
+        (graph->adjList)[i].OutDegree=0;
     }
     return graph;
 }
@@ -45,6 +48,9 @@ void mUGraphInsertEdge(MUGraph graph){
     puts("Insert succeed^ ^");
 }
 void lGraphInsertEdge(LGraph graph){
+    //All vertices are indexed starting at 1.
+
+
     vertex V,W;
     Weight weight;
     puts("<V,W> && weight:");
@@ -55,7 +61,8 @@ void lGraphInsertEdge(LGraph graph){
         find=find->adjVertex;
     if(find)
     {
-        printf("Error: %d -> %d existed.\n",V,W);
+        find->weight=weight;
+        puts("Insert succeed^ ^");
     }
     else
     {
@@ -65,14 +72,14 @@ void lGraphInsertEdge(LGraph graph){
         newNode->weight=weight;
         newNode->adjVertex=graph->adjList[V-1].firstAdjNode;
         graph->adjList[V-1].firstAdjNode=newNode;
+        graph->adjList[W-1].InDegree++;
         newNode=NULL; //prevent using that to change node info.
         puts("Insert succeed^ ^");
     }
 }
 
 void bfsLG(LGraph graph, vertex V){
-    Queue tmpQueue=(Queue)malloc(sizeof(struct searchQueue));
-    tmpQueue->front=tmpQueue->rear=0;
+    Queue tmpQueue=createQueue();
     graph->adjList[V-1].flag=true;
     //start: doing you want to do when travel the graph.
     printf("%d -> ",V);
@@ -96,25 +103,98 @@ void bfsLG(LGraph graph, vertex V){
     //Unnecessary for bfs, it just a extend feature.
     puts("END");
 }
+bool IsFull(Queue Q){
+    return ((Q->front+1)%LengthQueue)==Q->rear ? true:false;
+}
+bool IsEmpty(Queue Q){
+    return Q->rear==Q->front ? true:false;
+}
 void enSearchQueue(vertex V, Queue Q){
-    if(((Q->front+1)%MAX_NODE_LIST_GRAPH)==Q->rear)
+    if(IsFull(Q))
         puts("Error: Queue filled. Please extend the queue size!");
     else
     {
-        Q->front=(Q->front+1)%MAX_NODE_LIST_GRAPH;
+        Q->front=(Q->front+1)%LengthQueue;
         Q->queue[Q->front]=V;
     }
 }
 vertex deSearchQueue(Queue Q){
-    if(Q->rear==Q->front)
+    if(IsEmpty(Q))
     {
         puts("Error: Queue empty.");
         return -1;
     }
     else
     {
-        Q->rear=(Q->rear+1)%MAX_NODE_LIST_GRAPH;
+        Q->rear=(Q->rear+1)%LengthQueue;
         return Q->queue[Q->rear];
     }
 }
+Queue createQueue(){
+    Queue rtv=(Queue)malloc(sizeof(struct searchQueue));
+    rtv->front=0;
+    rtv->rear=0;
+    return rtv;
+}
+void MinPath(vertex start, LGraph g, Distance_Vertex list[])
+{
 
+    for(int i=0;i<=g->numbersVertex;i++){
+        list[i].known=false;
+        list[i].distance=INT32_MAX;
+        list[i].pre=Non_Vertex;
+    }
+    list[start].distance=0;
+    vertex min;
+    while(1){
+        min=0;
+        bool flag=true;
+        for(int i=1;i<=g->numbersVertex;i++){
+            flag=true;
+            if(list[i].known==true)
+                continue;
+            else{
+                if(list[i].distance<list[min].distance)
+                    min=i;
+                flag=false;
+            }
+        }
+        if(flag==true)
+            break;
+        list[min].known=true;
+        AdjNode tmpNode=g->adjList[min-1].firstAdjNode;
+        while(tmpNode){
+            if(list[tmpNode->v].distance>list[min].distance+tmpNode->weight) {
+                list[tmpNode->v].distance = tmpNode->weight+list[min].distance;
+                list[tmpNode->v].pre = min;
+            }
+            tmpNode=tmpNode->adjVertex;
+        }
+    }
+
+}
+void TopPath(vertex start,LGraph g){
+    puts("Top Sort:");
+    Queue q=createQueue();
+    if(g->adjList[start-1].InDegree==0)
+        enSearchQueue(start,q);
+    while (!IsEmpty(q)){
+        vertex tmp=deSearchQueue(q);
+        AdjNode tmpNode=g->adjList[tmp-1].firstAdjNode;
+        printf("V%d ",tmp);
+        while(tmpNode!=NULL){
+            g->adjList[tmpNode->v-1].InDegree--;
+            if(g->adjList[tmpNode->v-1].InDegree==0)
+                enSearchQueue(tmpNode->v,q);
+            tmpNode=tmpNode->adjVertex;
+        }
+    }
+}
+void printPath(vertex start, Distance_Vertex list[]){
+    if(list[start].pre!=Non_Vertex)
+    {
+        printPath(list[start].pre,list);
+        printf(" to ");
+    }
+    printf("V%d",start);
+}

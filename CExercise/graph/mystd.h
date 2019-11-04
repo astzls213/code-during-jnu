@@ -11,8 +11,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#define LengthQueue 100
 #define Independent -1
-#define MAX_NODE_LIST_GRAPH 100
 typedef int vertex;
 typedef int Weight;
 
@@ -35,13 +35,15 @@ struct adjNode{
 };
 typedef struct{
     bool flag; //used on bfs & dfs.
+    int InDegree;
+    int OutDegree;
     AdjNode firstAdjNode;
 }VNode;
 
 typedef struct ListGraph{
     int numbersVertex;
     int numbersEdge;
-    VNode adjList[MAX_NODE_LIST_GRAPH];
+    VNode *adjList;
 }*PtrToLGraph;
 //end
 typedef PtrToMUGraph MUGraph;
@@ -49,8 +51,15 @@ typedef PtrToLGraph LGraph;
 
 typedef struct searchQueue{
     int front,rear;
-    vertex queue[MAX_NODE_LIST_GRAPH];
+    vertex queue[LengthQueue];
 }*Queue;
+
+#define Non_Vertex 0
+typedef struct{
+    bool known;
+    int distance;
+    vertex pre;
+}Distance_Vertex;
 
 void enSearchQueue(vertex V, Queue Q);
 vertex deSearchQueue(Queue Q);
@@ -60,3 +69,12 @@ void lGraphInsertEdge(LGraph graph);
 void mUGraphInsertEdge(MUGraph graph);
 MUGraph createMUGraph(int scale);
 LGraph createLGraph(int scale);
+
+void MinPath(vertex start,LGraph g,Distance_Vertex list[]);
+void TopPath(vertex start,LGraph g);
+void printPath(vertex start, Distance_Vertex list[]);
+
+bool IsFull(Queue);
+bool IsEmpty(Queue);
+Queue createQueue();
+
