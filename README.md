@@ -3,6 +3,10 @@
 
 ### Update:
 
+###### 2019, 11, 4
+
+​		added some algorithm in graph field, such as **Min Path** and **Top Sort**.
+
 ###### 2019, 10, 22
 
 ​		update README for exp4Q2. It includes all my ideas when designing it.
