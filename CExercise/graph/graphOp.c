@@ -14,7 +14,7 @@ MUGraph createMUGraph(int scale){
     // assign every vertex to independent.
     for(int i=0;i<scale;i++)
         for(int j=0;j<scale;j++)
-            (graph->matrix)[i][j]=Independent;
+            (graph->matrix)[i][j]=INT32_MAX;
     return graph;
 }
 LGraph createLGraph(int scale){
@@ -37,7 +37,7 @@ void mUGraphInsertEdge(MUGraph graph){
     puts("( V, W, weight):");
     scanf("%d %d %d",&V,&W,&weight);
 
-    if((graph->matrix)[V][W]!=Independent)
+    if((graph->matrix)[V][W]!=INT32_MAX)
     {
         puts("Error: This edge has existed!");
         return;
@@ -197,4 +197,32 @@ void printPath(vertex start, Distance_Vertex list[]){
         printf(" to ");
     }
     printf("V%d",start);
+}
+void FindArt(vertex root,MUGraph graph){
+    vertex adj;
+    visited[root]=true;
+    low[root]=num[root]=count++;
+
+    for(adj=0;adj<graph->numberVertex;adj++){
+        if(graph->matrix[root][adj]==INT32_MAX)
+            continue;
+        else{
+            if(!visited[adj]){
+                parent[adj]=root;
+                FindArt(adj,graph);
+                if(num[root]!=1){//ignored starting point.
+                    if(num[root]<=low[adj]){
+                        printf("%d is a articulation!",root);
+                    }
+                }
+                low[root]=low[adj]<low[root]?low[adj]:low[root];
+            }
+            else{
+                if(parent[root]!=adj)//back edge.
+                {
+                    low[root]=num[adj] < low[root] ? num[adj] : low[root];
+                }
+            }
+        }
+    }
 }

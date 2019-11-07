@@ -11,8 +11,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#define MAX_VERTEX 100
 #define LengthQueue 100
-#define Independent -1
 typedef int vertex;
 typedef int Weight;
 
@@ -77,4 +77,14 @@ void printPath(vertex start, Distance_Vertex list[]);
 bool IsFull(Queue);
 bool IsEmpty(Queue);
 Queue createQueue();
+/*Tarjan algorithm which is used to find articulations in a graph.
+  But it ignores judging the root.*/
+void FindArt(vertex root,MUGraph graph);
+static bool visited[MAX_VERTEX];
+static vertex parent[MAX_VERTEX];
+static int num[MAX_VERTEX];
+static int low[MAX_VERTEX];
+static int count=1;
+//ended definitions.
+
 
