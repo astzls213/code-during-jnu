@@ -1,0 +1,30 @@
+﻿生成启动时间为 2019/11/9 14:17:06。
+     1>项目“C:\Users\Administrator\Desktop\exp5Q2\exp5Q2\exp5Q2.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt func.c
+         func.c
+     1>c:\users\administrator\desktop\exp5q2\exp5q2\func.c(44): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 12.0\vc\include\string.h(195) : 参见“strncpy”的声明
+     1>c:\users\administrator\desktop\exp5q2\exp5q2\func.c(47): warning C4047: “函数”:“char *”与“char *[101]”的间接级别不同
+     1>c:\users\administrator\desktop\exp5q2\exp5q2\func.c(47): warning C4024: “strncpy”: 形参和实参 1 的类型不同
+     1>c:\users\administrator\desktop\exp5q2\exp5q2\func.c(47): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 12.0\vc\include\string.h(195) : 参见“strncpy”的声明
+     1>c:\users\administrator\desktop\exp5q2\exp5q2\func.c(59): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>c:\users\administrator\desktop\exp5q2\exp5q2\func.c(76): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 12.0\vc\include\stdio.h(230) : 参见“fscanf”的声明
+     1>c:\users\administrator\desktop\exp5q2\exp5q2\func.c(127): warning C4028: 形参 2 与声明不同
+     1>c:\users\administrator\desktop\exp5q2\exp5q2\func.c(127): warning C4029: 声明的形参表不同于定义
+     1>c:\users\administrator\desktop\exp5q2\exp5q2\func.c(174): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>c:\users\administrator\desktop\exp5q2\exp5q2\func.c(192): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Desktop\exp5Q2\Debug\exp5Q2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator\Desktop\exp5Q2\Debug\exp5Q2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator\Desktop\exp5Q2\Debug\exp5Q2.lib" /MACHINE:X86 Debug\func.obj
+         Debug\main.obj
+         exp5Q2.vcxproj -> C:\Users\Administrator\Desktop\exp5Q2\Debug\exp5Q2.exe
+     1>已完成生成项目“C:\Users\Administrator\Desktop\exp5Q2\exp5Q2\exp5Q2.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.51

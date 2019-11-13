@@ -3,6 +3,10 @@
 
 ### Update:
 
+###### 2019, 11, 13
+
+​		added CExercise/exp5Q2. This experiment is about to find all pairs of vertex **MinPath**. Using Dynamic Programming----**Floyd Warshall Algorithm**   (**Introduction to algorithm P404**)
+
 ###### 2019, 11, 4
 
 ​		added some algorithm in graph field, such as **Min Path** and **Top Sort**.
