@@ -11,6 +11,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,13 +38,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.abstractWithInterface">
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day1Java.HelloWorld" />
+  <component name="RunManager" selected="Application.methodReference">
+    <configuration name="LearnComparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day4Java.LearnComparator" />
       <module name="day1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day1Java.*" />
+          <option name="PATTERN" value="day4Java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -51,12 +52,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="abstractWithInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day3Java.abstractWithInterface" />
+    <configuration name="callBack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day4Java.callBack" />
       <module name="day1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day3Java.*" />
+          <option name="PATTERN" value="day4Java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,12 +65,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bankAccount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day1Java.bankAccount" />
+    <configuration name="day5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day5Java.day5" />
       <module name="day1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day1Java.*" />
+          <option name="PATTERN" value="day5Java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="frameTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day3Java.frameTest" />
+    <configuration name="methodReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day5Java.methodReference" />
       <module name="day1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day3Java.*" />
+          <option name="PATTERN" value="day5Java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="polymorphismTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day2Java.polymorphismTest" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day5Java.test" />
       <module name="day1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day2Java.*" />
+          <option name="PATTERN" value="day5Java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.abstractWithInterface" />
-        <item itemvalue="Application.frameTest" />
-        <item itemvalue="Application.polymorphismTest" />
-        <item itemvalue="Application.bankAccount" />
-        <item itemvalue="Application.HelloWorld" />
+        <item itemvalue="Application.methodReference" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.day5" />
+        <item itemvalue="Application.LearnComparator" />
+        <item itemvalue="Application.callBack" />
       </list>
     </recent_temporary>
   </component>
@@ -130,6 +131,13 @@
       <workItem from="1567341101014" duration="367000" />
       <workItem from="1567561458702" duration="9361000" />
       <workItem from="1570624173939" duration="1719000" />
+      <workItem from="1571811392987" duration="5699000" />
+      <workItem from="1572100522887" duration="3483000" />
+      <workItem from="1572434410804" duration="5036000" />
+      <workItem from="1573006665559" duration="1694000" />
+      <workItem from="1573048797404" duration="749000" />
+      <workItem from="1573641723340" duration="4442000" />
+      <workItem from="1574217151992" duration="1424000" />
     </task>
     <servers />
   </component>
