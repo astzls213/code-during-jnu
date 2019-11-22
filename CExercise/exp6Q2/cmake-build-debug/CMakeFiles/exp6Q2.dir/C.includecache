@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/astzls/CLionProjects/exp6Q2/header.h
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+string.h
+-
+stdbool.h
+-
+ctype.h
+-
+
+/Users/astzls/CLionProjects/exp6Q2/main.c
+header.h
+/Users/astzls/CLionProjects/exp6Q2/header.h
+
