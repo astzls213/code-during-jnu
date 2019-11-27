@@ -3,6 +3,10 @@
 
 ### Update:
 
+###### 2019, 11, 27
+
+​		added QuickSort and Insertion Sort at CExercise/sort.
+
 ###### 2019, 11 ,22
 
 ​		added exp6Q1, exp6Q2 on CExercise. Q1 is a program for a very simple question, just ignore it. Q2 is a telephone directory program, it has four features like add, delete, find and modify your contact. Using C language compile.

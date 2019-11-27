@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/astzls/CLionProjects/sort/InsertionSort.c
+mystd.h
+/Users/astzls/CLionProjects/sort/mystd.h
+
+/Users/astzls/CLionProjects/sort/QuickSort.c
+mystd.h
+/Users/astzls/CLionProjects/sort/mystd.h
+
+/Users/astzls/CLionProjects/sort/main.c
+mystd.h
+/Users/astzls/CLionProjects/sort/mystd.h
+
+/Users/astzls/CLionProjects/sort/mystd.h
+stdbool.h
+-
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+
