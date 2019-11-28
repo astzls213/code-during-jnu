@@ -1,0 +1,1 @@
+/usr/bin/clang -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/exp7Q1.dir/main.c.o CMakeFiles/exp7Q1.dir/RadixSort.c.o  -o exp7Q1 

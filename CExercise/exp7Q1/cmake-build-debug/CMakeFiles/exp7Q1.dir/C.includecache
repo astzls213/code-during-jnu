@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/astzls/CLionProjects/exp7Q1/RadixSort.c
+mystd.h
+/Users/astzls/CLionProjects/exp7Q1/mystd.h
+
+/Users/astzls/CLionProjects/exp7Q1/mystd.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+

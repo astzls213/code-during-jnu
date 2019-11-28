@@ -3,6 +3,12 @@
 
 ### Update:
 
+###### 2019, 11, 28
+
+​		added exp7Q1: A managing system about student score. It can print student score in reverse order.
+
+​		Also, it can check a specified rank and print corresponding student and his/her score on console.
+
 ###### 2019, 11, 27
 
 ​		added QuickSort and Insertion Sort at CExercise/sort.
