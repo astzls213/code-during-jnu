@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/astzls/CLionProjects/exp7Q1/RadixSort.c
+/Users/astzls/CLionProjects/exp7Q1/main.c
 mystd.h
 /Users/astzls/CLionProjects/exp7Q1/mystd.h
 
@@ -16,5 +16,7 @@ stdlib.h
 stdio.h
 -
 string.h
+-
+time.h
 -
 

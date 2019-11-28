@@ -123,6 +123,33 @@ exp7Q1/fast:
 	$(MAKE) -f CMakeFiles/exp7Q1.dir/build.make CMakeFiles/exp7Q1.dir/build
 .PHONY : exp7Q1/fast
 
+QuickSort.o: QuickSort.c.o
+
+.PHONY : QuickSort.o
+
+# target to build an object file
+QuickSort.c.o:
+	$(MAKE) -f CMakeFiles/exp7Q1.dir/build.make CMakeFiles/exp7Q1.dir/QuickSort.c.o
+.PHONY : QuickSort.c.o
+
+QuickSort.i: QuickSort.c.i
+
+.PHONY : QuickSort.i
+
+# target to preprocess a source file
+QuickSort.c.i:
+	$(MAKE) -f CMakeFiles/exp7Q1.dir/build.make CMakeFiles/exp7Q1.dir/QuickSort.c.i
+.PHONY : QuickSort.c.i
+
+QuickSort.s: QuickSort.c.s
+
+.PHONY : QuickSort.s
+
+# target to generate assembly for a file
+QuickSort.c.s:
+	$(MAKE) -f CMakeFiles/exp7Q1.dir/build.make CMakeFiles/exp7Q1.dir/QuickSort.c.s
+.PHONY : QuickSort.c.s
+
 RadixSort.o: RadixSort.c.o
 
 .PHONY : RadixSort.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... exp7Q1"
+	@echo "... QuickSort.o"
+	@echo "... QuickSort.i"
+	@echo "... QuickSort.s"
 	@echo "... RadixSort.o"
 	@echo "... RadixSort.i"
 	@echo "... RadixSort.s"

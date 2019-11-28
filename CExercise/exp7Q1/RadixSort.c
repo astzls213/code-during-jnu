@@ -86,7 +86,7 @@ void Collect(Student stu,int *f, int *e){
     stu[end].next=0;//let it point to header-node.
 }
 void RadixSort(Marks list){
-    int f[RADIX]={0},e[RADIX]={0};
+    KeyArray f={0},e={0};
     for(int i=1;i<list->keyNum;i++){
         Distributed(list->array,i,f,e);
         Collect(list->array,f,e);

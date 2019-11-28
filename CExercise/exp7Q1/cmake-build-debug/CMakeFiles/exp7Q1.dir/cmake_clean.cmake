@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/exp7Q1.dir/main.c.o"
   "CMakeFiles/exp7Q1.dir/RadixSort.c.o"
+  "CMakeFiles/exp7Q1.dir/QuickSort.c.o"
   "exp7Q1.pdb"
   "exp7Q1"
 )

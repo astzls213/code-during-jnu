@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/astzls/CLionProjects/exp7Q1/QuickSort.c">
+			<Option target="exp7Q1"/>
+		</Unit>
 		<Unit filename="/Users/astzls/CLionProjects/exp7Q1/RadixSort.c">
 			<Option target="exp7Q1"/>
 		</Unit>

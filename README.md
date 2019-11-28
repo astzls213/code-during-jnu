@@ -3,6 +3,10 @@
 
 ### Update:
 
+###### 2019, 11, 29
+
+​		update exp7Q1: Adding QucikSort method to sort. Previously it's Radix Sort. And RadixSort is quicker than quicksort.  As quicksort need recursion.
+
 ###### 2019, 11, 28
 
 ​		added exp7Q1: A managing system about student score. It can print student score in reverse order.

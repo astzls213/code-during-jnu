@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/astzls/CLionProjects/exp7Q1/QuickSort.c" "/Users/astzls/CLionProjects/exp7Q1/cmake-build-debug/CMakeFiles/exp7Q1.dir/QuickSort.c.o"
   "/Users/astzls/CLionProjects/exp7Q1/RadixSort.c" "/Users/astzls/CLionProjects/exp7Q1/cmake-build-debug/CMakeFiles/exp7Q1.dir/RadixSort.c.o"
   "/Users/astzls/CLionProjects/exp7Q1/main.c" "/Users/astzls/CLionProjects/exp7Q1/cmake-build-debug/CMakeFiles/exp7Q1.dir/main.c.o"
   )
