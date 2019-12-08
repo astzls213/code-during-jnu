@@ -3,6 +3,10 @@
 
 ### Update:
 
+###### 2019, 12, 8
+
+​		upload some java code. Some question code.
+
 ###### 2019, 11, 29
 
 ​		update exp7Q1: Adding QucikSort method to sort. Previously it's Radix Sort. And RadixSort is quicker than quicksort.  As quicksort need recursion.
