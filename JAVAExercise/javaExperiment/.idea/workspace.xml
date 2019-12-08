@@ -34,13 +34,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.E15">
-    <configuration name="E12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exp4.E12" />
+  <component name="RunManager" selected="Application.TicketsTest">
+    <configuration name="Demo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exp5.Demo2" />
       <module name="javaExperiment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exp4.*" />
+          <option name="PATTERN" value="exp5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -48,12 +48,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="E13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exp4.E13" />
+    <configuration name="Demo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exp5.Demo3" />
       <module name="javaExperiment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exp4.*" />
+          <option name="PATTERN" value="exp5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -61,12 +61,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="E14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exp4.E14" />
+    <configuration name="TicketsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exp5.TicketsTest" />
       <module name="javaExperiment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exp4.*" />
+          <option name="PATTERN" value="exp5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,12 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="E15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exp4.E15" />
+    <configuration name="threadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exp5.threadTest" />
       <module name="javaExperiment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exp4.*" />
+          <option name="PATTERN" value="exp5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exp3.test" />
+    <configuration name="writeData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exp5.writeData" />
       <module name="javaExperiment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exp3.*" />
+          <option name="PATTERN" value="exp5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,19 +101,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.test" />
-      <item itemvalue="Application.E12" />
-      <item itemvalue="Application.E13" />
-      <item itemvalue="Application.E14" />
-      <item itemvalue="Application.E15" />
+      <item itemvalue="Application.writeData" />
+      <item itemvalue="Application.TicketsTest" />
+      <item itemvalue="Application.threadTest" />
+      <item itemvalue="Application.Demo2" />
+      <item itemvalue="Application.Demo3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.E15" />
-        <item itemvalue="Application.E14" />
-        <item itemvalue="Application.E13" />
-        <item itemvalue="Application.E12" />
-        <item itemvalue="Application.test" />
+        <item itemvalue="Application.TicketsTest" />
+        <item itemvalue="Application.threadTest" />
+        <item itemvalue="Application.Demo3" />
+        <item itemvalue="Application.Demo2" />
+        <item itemvalue="Application.writeData" />
       </list>
     </recent_temporary>
   </component>
@@ -130,6 +130,7 @@
       <workItem from="1571223732137" duration="5714000" />
       <workItem from="1573035253255" duration="3514000" />
       <workItem from="1574245972837" duration="4736000" />
+      <workItem from="1575443429943" duration="5764000" />
     </task>
     <servers />
   </component>
